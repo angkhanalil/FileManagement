@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine ,text
 import pandas as pd 
 import pyodbc,pymssql
-import sqlalchemy as sql
+import sqlalchemy as sql 
 from sqlalchemy.sql.expression import false
 ImportEmployee = Blueprint('Import_Employee', __name__) 
 

@@ -10,7 +10,7 @@ ImportEmployee = Blueprint('Import_Employee', __name__)
 import urllib
 #'PORT=1433;' \mssql+pymssql://COM1644\MSSQLEXPRESS/WORKWEAR?driver{SQL Server Native Client 10.0}
 
-server = 'admin:admin1644@COM1644\MSSQLEXPRESS/UNIFORM?driver{SQL Server Native Client 10.0}' 
+server = "" # 'admin:admin1644@COM1644\MSSQLEXPRESS/UNIFORM?driver{SQL Server Native Client 10.0}' 
 engine = sql.create_engine('mssql+pymssql://{}'.format(server))
 
 @ImportEmployee.route('/hello')
